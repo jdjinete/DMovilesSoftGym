@@ -13,4 +13,36 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello SOFTGYM" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="101dp"
+        android:layout_marginEnd="101dp">
+
+        <Button
+            android:layout_width="147dp"
+            android:layout_height="153dp"
+            android:text="boton Vista"
+            android:id="@+id/btnVista"
+            android:layout_gravity="center_horizontal|bottom"
+            android:onClick="lanzar"
+            android:clickable="true"
+            android:contextClickable="false"
+            android:enabled="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reportes"
+            android:id="@+id/button"
+            android:onClick="lanzare"
+            android:clickable="true"
+            android:contextClickable="false"
+            android:enabled="true"
+            android:layout_gravity="right|center_vertical" />
+    </FrameLayout>
 </RelativeLayout>

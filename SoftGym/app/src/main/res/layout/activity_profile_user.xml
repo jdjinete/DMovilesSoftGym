@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.jjinetec.softgym.ProfileUser"
+    android:background="#ffee00">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:id="@+id/imageView"
+        android:src="@drawable/logosoftgym"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_height="100dp"
+        android:layout_width="100dp"
+        android:textSize="40dp"
+        android:text="Perfil User"
+        android:layout_gravity="center"
+        android:textColor="@color/abc_primary_text_material_light"
+        android:textStyle="normal|bold"
+        android:id="@+id/textView4"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/imageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignBottom="@+id/imageView" />
+
+    <TextView
+        android:layout_height="40dp"
+        android:layout_width="90dp"
+        android:textSize="20dp"
+        android:text="Nombre:"
+        android:layout_gravity="center"
+        android:textColor="@color/abc_primary_text_material_light"
+        android:textStyle="normal|bold"
+        android:id="@+id/textView5"
+        android:layout_above="@+id/textView6"
+        android:layout_toRightOf="@+id/textView7"
+        android:layout_toEndOf="@+id/textView7" />
+
+    <TextView
+        android:layout_height="60dp"
+        android:layout_width="130dp"
+        android:textSize="20dp"
+        android:text="No Identificación:"
+        android:layout_gravity="center"
+        android:textColor="@color/abc_primary_text_material_light"
+        android:textStyle="normal|bold"
+        android:id="@+id/textView6"
+        android:layout_below="@+id/nombre"
+        android:layout_alignLeft="@+id/textView5"
+        android:layout_alignStart="@+id/textView5" />
+
+    <TextView
+        android:layout_height="60dp"
+        android:layout_width="120dp"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        android:textColor="@color/abc_primary_text_material_light"
+        android:textStyle="normal|bold"
+        android:id="@+id/nombre"
+        android:layout_below="@+id/imageView"
+        android:layout_toRightOf="@+id/textView5"
+        android:layout_alignRight="@+id/NoIdentificacion"
+        android:layout_alignEnd="@+id/NoIdentificacion" />
+
+    <TextView
+        android:layout_height="60dp"
+        android:layout_width="120dp"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        android:textColor="@color/abc_primary_text_material_light"
+        android:textStyle="normal|bold"
+        android:id="@+id/NoIdentificacion"
+        android:layout_below="@+id/nombre"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_height="40dp"
+        android:layout_width="120dp"
+        android:textSize="20dp"
+        android:text="Genero:"
+        android:layout_gravity="center"
+        android:textColor="@color/abc_primary_text_material_light"
+        android:textStyle="normal|bold"
+        android:id="@+id/textView7"
+        android:layout_below="@+id/NoIdentificacion"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_height="60dp"
+        android:layout_width="120dp"
+        android:textSize="20dp"
+        android:text="Fecha Nacimiento:"
+        android:layout_gravity="center"
+        android:textColor="@color/abc_primary_text_material_light"
+        android:textStyle="normal|bold"
+        android:id="@+id/textView8"
+        android:layout_below="@+id/textView7"
+        android:layout_toLeftOf="@+id/textView6"
+        android:layout_toStartOf="@+id/textView6" />
+
+    <TextView
+        android:layout_height="40dp"
+        android:layout_width="120dp"
+        android:textSize="20dp"
+        android:text="Dirección:"
+        android:layout_gravity="center"
+        android:textColor="@color/abc_primary_text_material_light"
+        android:textStyle="normal|bold"
+        android:id="@+id/textView9"
+        android:layout_below="@+id/textView8"
+        android:layout_toLeftOf="@+id/textView6"
+        android:layout_toStartOf="@+id/textView6" />
+
+    <TextView
+        android:layout_height="40dp"
+        android:layout_width="120dp"
+        android:textSize="20dp"
+        android:text="E-mail:"
+        android:layout_gravity="center"
+        android:textColor="@color/abc_primary_text_material_light"
+        android:textStyle="normal|bold"
+        android:id="@+id/textView10"
+        android:layout_below="@+id/textView9"
+        android:layout_toLeftOf="@+id/textView6"
+        android:layout_toStartOf="@+id/textView6" />
+
+    <TextView
+        android:layout_height="40dp"
+        android:layout_width="120dp"
+        android:textSize="20dp"
+        android:text="Estatura:"
+        android:layout_gravity="center"
+        android:textColor="@color/abc_primary_text_material_light"
+        android:textStyle="normal|bold"
+        android:id="@+id/textView11"
+        android:layout_below="@+id/textView10"
+        android:layout_toLeftOf="@+id/textView6"
+        android:layout_toStartOf="@+id/textView6" />
+
+    <TextView
+        android:layout_height="40dp"
+        android:layout_width="120dp"
+        android:textSize="20dp"
+        android:text="Peso:"
+        android:layout_gravity="center"
+        android:textColor="@color/abc_primary_text_material_light"
+        android:textStyle="normal|bold"
+        android:id="@+id/textView12"
+        android:layout_below="@+id/textView11"
+        android:layout_toLeftOf="@+id/textView6"
+        android:layout_toStartOf="@+id/textView6" />
+
+    <TextView
+        android:layout_height="40dp"
+        android:layout_width="120dp"
+        android:textSize="20dp"
+        android:text="IMC:"
+        android:layout_gravity="center"
+        android:textColor="@color/abc_primary_text_material_light"
+        android:textStyle="normal|bold"
+        android:id="@+id/textView13"
+        android:layout_below="@+id/textView12"
+        android:layout_toLeftOf="@+id/textView6"
+        android:layout_toStartOf="@+id/textView6" />
+
+    <TextView
+        android:layout_height="40dp"
+        android:layout_width="200dp"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        android:textColor="@color/abc_primary_text_material_light"
+        android:textStyle="normal|bold"
+        android:id="@+id/Genero"
+        android:layout_above="@+id/textView8"
+        android:layout_alignLeft="@+id/textView6"
+        android:layout_alignStart="@+id/textView6" />
+
+    <TextView
+        android:layout_height="40dp"
+        android:layout_width="200dp"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        android:textColor="@color/abc_primary_text_material_light"
+        android:textStyle="normal|bold"
+        android:id="@+id/Direccion"
+        android:layout_alignTop="@+id/textView9"
+        android:layout_alignLeft="@+id/FechaNacimiento"
+        android:layout_alignStart="@+id/FechaNacimiento" />
+
+    <TextView
+        android:layout_height="40dp"
+        android:layout_width="200dp"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        android:textColor="@color/abc_primary_text_material_light"
+        android:textStyle="normal|bold"
+        android:id="@+id/FechaNacimiento"
+        android:layout_above="@+id/Direccion"
+        android:layout_alignLeft="@+id/textView6"
+        android:layout_alignStart="@+id/textView6" />
+
+    <TextView
+        android:layout_height="40dp"
+        android:layout_width="200dp"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        android:textColor="@color/abc_primary_text_material_light"
+        android:textStyle="normal|bold"
+        android:id="@+id/Email"
+        android:layout_above="@+id/textView11"
+        android:layout_alignRight="@+id/Direccion"
+        android:layout_alignEnd="@+id/Direccion" />
+
+    <TextView
+        android:layout_height="40dp"
+        android:layout_width="200dp"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        android:textColor="@color/abc_primary_text_material_light"
+        android:textStyle="normal|bold"
+        android:id="@+id/Estatura"
+        android:layout_above="@+id/textView12"
+        android:layout_alignLeft="@+id/Email"
+        android:layout_alignStart="@+id/Email" />
+
+    <TextView
+        android:layout_height="40dp"
+        android:layout_width="200dp"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        android:textColor="@color/abc_primary_text_material_light"
+        android:textStyle="normal|bold"
+        android:id="@+id/Peso"
+        android:layout_above="@+id/textView13"
+        android:layout_alignLeft="@+id/Estatura"
+        android:layout_alignStart="@+id/Estatura" />
+
+    <TextView
+        android:layout_height="40dp"
+        android:layout_width="200dp"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        android:textColor="@color/abc_primary_text_material_light"
+        android:textStyle="normal|bold"
+        android:id="@+id/IMC"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/Peso"
+        android:layout_alignStart="@+id/Peso" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageView2"
+        android:src="@drawable/yourphotohere"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>
