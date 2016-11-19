@@ -12,7 +12,7 @@
 
     <com.jjoe64.graphview.GraphView
         android:layout_width="match_parent"
-        android:layout_height="450dp"
+        android:layout_height="430dp"
         android:id="@+id/graph"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
@@ -24,9 +24,11 @@
         android:text="Peso Vs Rutinas Completadas"
         android:id="@+id/idTitle"
         android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:textSize="25dp"
+        android:textSize="24dp"
         android:textIsSelectable="true"
-        android:textStyle="normal|bold|italic" />
+        android:textStyle="normal|bold|italic"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 </RelativeLayout>
