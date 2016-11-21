@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.jjinetec.softgym">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -17,7 +19,8 @@
         </activity>
         <activity android:name=".Login2" />
         <activity android:name=".ProfileUser" />
-        <activity android:name=".GraphicsReports"></activity>
+        <activity android:name=".GraphicsReports" />
+        <activity android:name=".DescriptionExercise"></activity>
     </application>
 
 </manifest>
