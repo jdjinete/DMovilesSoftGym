@@ -29,10 +29,10 @@ import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 public class MainActivity extends AppCompatActivity {
-
-
-	@BindView( R.id.btnPrueba )
-	Button btnPrueba;
+//
+//
+//	@BindView( R.id.btnPrueba )
+//	Button btnPrueba;
 
 
 	private FirebaseAuth mAuth;
@@ -186,10 +186,10 @@ public class MainActivity extends AppCompatActivity {
 	}
 
 
-	@OnClick(R.id.btnPrueba)
-	public void mensaje(View view) {
-		Toast.makeText( this, "Ingreso", Toast.LENGTH_SHORT ).show( );
-	}
+//	@OnClick(R.id.btnPrueba)
+//	public void mensaje(View view) {
+//		Toast.makeText( this, "Ingreso", Toast.LENGTH_SHORT ).show( );
+//	}
 
 
 }

@@ -1,18 +1,190 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                xmlns:tools="http://schemas.android.com/tools"
+                xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:paddingBottom="@dimen/activity_vertical_margin"
                 android:paddingLeft="@dimen/activity_horizontal_margin"
                 android:paddingRight="@dimen/activity_horizontal_margin"
                 android:paddingTop="@dimen/activity_vertical_margin"
+                android:background="#ffee00"
                 tools:context="com.example.jjinetec.softgym.MenuPrincipal$PlaceholderFragment">
 
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" app:srcCompat="@drawable/yourphotohere"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="225dp"
+        android:layout_marginEnd="225dp" android:id="@+id/imgPerfil"
+        android:layout_marginBottom="360dp" android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true" android:layout_alignParentEnd="true"/>
     <TextView
-        android:id="@+id/section_label"
+        android:text="Teléfono:"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Tab No. 1"
-    />
-
+        android:id="@+id/txtViewTelefono" android:layout_alignBottom="@+id/imgPerfil"
+        android:layout_alignLeft="@+id/txtViewGenero"
+        android:layout_alignStart="@+id/txtViewGenero" android:layout_marginTop="13dp"
+        android:textStyle="normal|bold|italic"/>
+    <TextView
+        android:text="Fecha de Nacimiento: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_below="@+id/txtViewTelefono"
+        android:layout_alignParentLeft="true" android:layout_alignParentStart="true"
+        android:layout_marginTop="26dp" android:id="@+id/txtViewFeNacimiento"
+        android:textStyle="normal|bold|italic"/>
+    <TextView
+        android:text="Email:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_below="@+id/txtViewFeNacimiento"
+        android:layout_alignParentLeft="true" android:layout_alignParentStart="true"
+        android:layout_marginTop="13dp" android:id="@+id/txtViewEmail"
+        android:textStyle="normal|bold|italic"/>
+    <TextView
+        android:text="Dirección:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_below="@+id/txtViewEmail"
+        android:layout_alignParentLeft="true" android:layout_alignParentStart="true"
+        android:layout_marginTop="13dp" android:id="@+id/txtViewDireccion"
+        android:textStyle="normal|bold|italic"/>
+    <TextView
+        android:text="Peso:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_below="@+id/txtViewDireccion"
+        android:layout_alignParentLeft="true" android:layout_alignParentStart="true"
+        android:layout_marginTop="13dp" android:id="@+id/txtViewPeso"
+        android:textStyle="normal|bold|italic"/>
+    <TextView
+        android:text="Estatura:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_below="@+id/txtViewPeso"
+        android:layout_alignParentLeft="true" android:layout_alignParentStart="true"
+        android:layout_marginTop="13dp" android:id="@+id/txtViewEstatura"
+        android:textStyle="normal|bold|italic"/>
+    <TextView
+        android:text="Fecha de Ingreso: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_below="@+id/txtViewEstatura"
+        android:layout_alignParentLeft="true" android:layout_alignParentStart="true"
+        android:layout_marginTop="13dp" android:id="@+id/textView22"
+        android:textStyle="normal|bold|italic"/>
+    <TextView
+        android:text="RH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_below="@+id/textView22"
+        android:layout_alignParentLeft="true" android:layout_alignParentStart="true"
+        android:layout_marginTop="13dp" android:id="@+id/txtViewRh"
+        android:textStyle="normal|bold|italic"/>
+    <TextView
+        android:text="Estado Médico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_below="@+id/txtViewRh"
+        android:layout_alignParentLeft="true" android:layout_alignParentStart="true"
+        android:layout_marginTop="13dp" android:id="@+id/txtViewEstadoMedico"
+        android:textStyle="normal|bold|italic"/>
+    <TextView
+        android:text="Nombre: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtViewNombre"
+        android:layout_alignParentTop="true" android:layout_toRightOf="@+id/txtViewFeNacimiento"
+        android:layout_toEndOf="@+id/txtViewFeNacimiento" android:textStyle="normal|bold|italic"/>
+    <TextView
+        android:text="Cédula No.:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtViewCedula"
+        android:layout_below="@+id/txtViewNombre" android:layout_alignLeft="@+id/txtViewNombre"
+        android:layout_alignStart="@+id/txtViewNombre" android:layout_marginTop="15dp"
+        android:textStyle="normal|bold|italic"/>
+    <TextView
+        android:text="Género:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtViewGenero"
+        android:layout_above="@+id/txtViewTelefono" android:layout_alignLeft="@+id/txtViewCedula"
+        android:layout_alignStart="@+id/txtViewCedula" android:layout_marginBottom="12dp"
+        android:textStyle="normal|bold|italic"/>
+    <TextView
+        android:text="317 098 0987"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_alignBottom="@+id/txtViewTelefono"
+        android:layout_alignLeft="@+id/txtViewUserGenre"
+        android:layout_alignStart="@+id/txtViewUserGenre" android:id="@+id/txtViewUserPhone"/>
+    <TextView
+        android:text="27 Noviembre de 1999"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_above="@+id/txtViewEmail"
+        android:layout_toRightOf="@+id/txtViewFeNacimiento"
+        android:layout_toEndOf="@+id/txtViewFeNacimiento" android:layout_marginLeft="19dp"
+        android:layout_marginStart="19dp" android:id="@+id/txtViewUserBorn"/>
+    <TextView
+        android:text="johndoe@gmail.com"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_alignBottom="@+id/txtViewEmail"
+        android:layout_alignLeft="@+id/txtViewUserBorn"
+        android:layout_alignStart="@+id/txtViewUserBorn" android:id="@+id/txtViewUserEmail"
+        android:textStyle="normal|bold"/>
+    <TextView
+        android:text="Avenida siempre viva 742"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_alignBottom="@+id/txtViewDireccion"
+        android:layout_alignLeft="@+id/txtViewUserEmail"
+        android:layout_alignStart="@+id/txtViewUserEmail" android:id="@+id/txtViewUserAddress"/>
+    <TextView
+        android:text="80 Kgs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_alignBottom="@+id/txtViewPeso"
+        android:layout_alignLeft="@+id/txtViewUserAddress"
+        android:layout_alignStart="@+id/txtViewUserAddress" android:id="@+id/txtViewUserWeight"/>
+    <TextView
+        android:text="1,70 Mts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_above="@+id/textView22"
+        android:layout_alignLeft="@+id/txtViewUserWeight"
+        android:layout_alignStart="@+id/txtViewUserWeight" android:id="@+id/txtViewUserHeight"/>
+    <TextView
+        android:text="Agosto 23 de 1990"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_alignBottom="@+id/textView22"
+        android:layout_alignLeft="@+id/txtViewUserHeight"
+        android:layout_alignStart="@+id/txtViewUserHeight" android:id="@+id/txtViewUserStart"/>
+    <TextView
+        android:text="O+"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_above="@+id/txtViewEstadoMedico"
+        android:layout_alignLeft="@+id/txtViewUserStart"
+        android:layout_alignStart="@+id/txtViewUserStart" android:id="@+id/txtViewUserBlood"
+        android:textStyle="normal|bold"/>
+    <TextView
+        android:text="En perfectas condiciones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_alignBottom="@+id/txtViewEstadoMedico"
+        android:layout_alignLeft="@+id/txtViewUserBlood"
+        android:layout_alignStart="@+id/txtViewUserBlood" android:id="@+id/txtViewUserConditions"/>
+    <TextView
+        android:text="John Doe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtViewUserName" android:textStyle="normal|bold"
+        android:layout_alignParentTop="true" android:layout_alignRight="@+id/txtViewUserStart"
+        android:layout_alignEnd="@+id/txtViewUserStart"/>
+    <TextView
+        android:text="1.098.789"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtViewUserId"
+        android:inputType="number"
+        android:layout_alignBaseline="@+id/txtViewCedula"
+        android:layout_alignBottom="@+id/txtViewCedula"
+        android:layout_alignLeft="@+id/txtViewUserName"
+        android:layout_alignStart="@+id/txtViewUserName"/>
+    <TextView
+        android:text="Variable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtViewUserGenre" android:layout_alignBaseline="@+id/txtViewGenero"
+        android:layout_alignBottom="@+id/txtViewGenero"
+        android:layout_alignLeft="@+id/txtViewUserId"
+        android:layout_alignStart="@+id/txtViewUserId"/>
 </RelativeLayout>

@@ -53,6 +53,13 @@
         <!--android:layout_alignEnd="@+id/btnConnect"-->
         <!--android:layout_above="@+id/iconSoftGym" />-->
 
+    <com.google.android.gms.common.SignInButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSignIn"
+
+        android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"
+        android:layout_marginBottom="39dp"/>
     <ImageView
         android:layout_width="200dp"
         android:layout_height="100dp"
@@ -61,37 +68,11 @@
         android:maxWidth="@dimen/abc_action_bar_overflow_padding_end_material"
         android:clickable="false"
         android:src="@drawable/logosoftgym"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="46dp"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
 
-    />
-
-    <com.google.android.gms.common.SignInButton
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/btnSignIn"
-        android:layout_below="@+id/iconSoftGym"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginRight="11dp"
-        android:layout_marginEnd="11dp"
-        android:layout_marginTop="91dp"
-
-     />
-    <Button
-        android:text="Button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/btnSignIn"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="19dp"
-        android:id="@+id/btnPrueba"
-        android:onClick="mensaje"
-    />
+        android:layout_marginTop="92dp"
+        android:layout_alignParentTop="true" android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"/>
 
 
 </RelativeLayout>
