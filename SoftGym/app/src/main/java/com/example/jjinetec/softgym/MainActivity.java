@@ -101,7 +101,7 @@ public class MainActivity extends AppCompatActivity {
 					// User is signed in
 					Log.d( TAG, "onAuthStateChanged:signed_in:" + user.getUid( ) );
 					Log.d( TAG, "Ingreso Correctamente :)");
-					startActivity( new Intent( MainActivity.this, GraphicsReports.class ) );
+					startActivity( new Intent( MainActivity.this, MenuPrincipal.class ) );
 				}
 				else {
 					// User is signed out
